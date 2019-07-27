@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css">
+        <title>whatifiinvested</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar navbar-dark bg-dark">
+                <a href="#" class="brand-logo">whatifiinvested</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#home-section">Home </a></li>
+                <li><a href="#pages-section">Tesla</a></li>
+                <li><a href="collapsible.html">Facebook</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="home-section" class="center-align bg-dark">
+                <h1>whatifiinvested</h1>
+                <p class="flow-text title-caption">This is a simple web app that tells you how much you could have gotten in return for an investment made in a particular year </p>
+                <a class="waves-effect waves-light btn-large margin-right-20" href="#pages-section" >Tesla</a>
+                <a class="waves-effect waves-light btn-large">Facebook</a>
+         </div>
+         <div id="pages-section" class="calculator-section center-align container">
+                <h1>Tesla</h1>
+                <p class="flow-text title-caption">Find out your ROI in Tesla</p>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 pages-text">
+                                <input id="pages-inputit" class="validate" type="number"></input>
+                                <label for="pages-inputit" class="active">Year you invested in</label>
+                            </div>
+                            <div class="input-field col s12 pages-text">
+                                    <input id="pages-inputrt" class="validate" type="number"></input>
+                                    <label for="pages-inputrt" class="active">Year of return</label>
+                            <div class="input-field col s12 pages-text">
+                                    <input id="pages-inputat" class="validate" type="number"></input>
+                                    <label for="pages-inputat" class="active">Amount</label>
+                            <button onclick="onSubmit()" class="btn waves-effect waves-light btn-large calculate-btn pages-text" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <br>
+                            <div class="row center-align pages-text2">
+                                <div class="card-panel teal lighten-5">
+                                    <span id="pages-output">Your results will display here after you click the 'Calculate' button.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="pages-section" class="calculator-section center-align container">
+                    <h1>Facebook</h1>
+                    <p class="flow-text title-caption">Find out your ROI in Facebook</p>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12 pages-text">
+                                    <input id="pages-inputifb" class="validate" type="number"></input>
+                                    <label for="pages-inputifb" class="active">Year you invested in</label>
+                                </div>
+                                <div class="input-field col s12 pages-text">
+                                        <input id="pages-inputrfb" class="validate" type="number"></input>
+                                        <label for="pages-inputrfb" class="active">Year of return</label>
+                                <div class="input-field col s12 pages-text">
+                                        <input id="pages-inputafb" class="validate" type="number"></input>
+                                        <label for="pages-inputafb" class="active">Amount</label>
+                                <button onclick="onSubmit()" class="btn waves-effect waves-light btn-large calculate-btn pages-text" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                                <br>
+                                <div class="row center-align pages-text2">
+                                    <div class="card-panel teal lighten-5">
+                                        <span id="pages-output">Your results will display here after you click the 'Calculate' button.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="main.js"></script>
+            
+        
+    </body>
